@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include <stdexcept> // для обработки исключений
+#include <stdexcept>
 
 using namespace std;
 
@@ -8,7 +8,7 @@ class Clever_array
 public:
 	Clever_array(int p_size) : size(p_size), current_size(0) {
 		if (size <= 0) {
-			throw std::invalid_argument("Размер массива должен быть больше нуля.");
+			throw invalid_argument("Размер массива должен быть больше нуля.");
 		}
 		array = new int[size]; 
 	}
